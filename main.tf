@@ -8,9 +8,9 @@
 #   }
 # }
 
-# provider "aws" {
-#   region = var.aws_region
-# }
+provider "aws" {
+  region = var.aws_region
+}
 
 # # Lookup the default VPC
 # data "aws_vpc" "default" {

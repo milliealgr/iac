@@ -42,3 +42,17 @@
 #   description = "Database name of the MariaDB RDS instance"
 #   value       = aws_db_instance.mariadb.db_name
 # }
+
+# ==============================================================================
+# ECR Outputs
+# ==============================================================================
+
+output "ecr_repository_url" {
+  description = "URL del repositorio ECR para subir imagenes Docker"
+  value       = aws_ecr_repository.primer_proyecto_docker.repository_url
+}
+
+output "ecr_repository_arn" {
+  description = "ARN del repositorio ECR"
+  value       = aws_ecr_repository.primer_proyecto_docker.arn
+}
