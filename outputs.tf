@@ -47,12 +47,36 @@
 # ECR Outputs
 # ==============================================================================
 
-output "ecr_repository_url" {
-  description = "URL del repositorio ECR para subir imagenes Docker"
-  value       = aws_ecr_repository.primer_proyecto_docker.repository_url
-}
+# output "ecr_repository_url" {
+#   description = "URL del repositorio ECR para subir imagenes Docker"
+#   value       = aws_ecr_repository.primer_proyecto_docker.repository_url
+# }
 
-output "ecr_repository_arn" {
-  description = "ARN del repositorio ECR"
-  value       = aws_ecr_repository.primer_proyecto_docker.arn
-}
+# output "ecr_repository_arn" {
+#   description = "ARN del repositorio ECR"
+#   value       = aws_ecr_repository.primer_proyecto_docker.arn
+# }
+
+# ==============================================================================
+# ECS & ALB Outputs
+# ==============================================================================
+
+# output "alb_dns_name" {
+#   description = "DNS del Application Load Balancer"
+#   value       = aws_lb.main.dns_name
+# }
+
+# output "alb_url" {
+#   description = "URL para acceder a la aplicacion a traves del ALB"
+#   value       = "http://${aws_lb.main.dns_name}"
+# }
+
+# output "ecs_cluster_name" {
+#   description = "Nombre del cluster ECS"
+#   value       = aws_ecs_cluster.main.name
+# }
+
+# output "ecs_service_name" {
+#   description = "Nombre del servicio ECS"
+#   value       = aws_ecs_service.app.name
+# }
